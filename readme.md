@@ -44,7 +44,7 @@ npm create vite@latest my-project -- --template
 Naviguer vers le répertoire du projet : Si ce n'est pas déjà fait, allez dans le répertoire où vous avez cloné le projet. Par exemple :
 
 ```
-cd nom-du-repertoire
+cd workshop-project / workshop-project-back
 ```
 ### Installer les dépendances : 
 
