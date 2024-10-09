@@ -44,20 +44,13 @@ npm create vite@latest my-project -- --template
 Naviguer vers le répertoire du projet : Si ce n'est pas déjà fait, allez dans le répertoire où vous avez cloné le projet. Par exemple :
 
 ```
-
 cd nom-du-repertoire
 ```
-
 Installer les dépendances : Une fois que vous êtes dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances listées dans le fichier package.json :
-
 ```
-
 npm install
 ```
-
 Démarrer le serveur de développement : Après l'installation des dépendances, vous pouvez démarrer le serveur de développement avec :
-
 ```
-
 npm run dev
 ```
