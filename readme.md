@@ -46,7 +46,9 @@ Naviguer vers le répertoire du projet : Si ce n'est pas déjà fait, allez dans
 ```
 cd nom-du-repertoire
 ```
-Installer les dépendances : Une fois que vous êtes dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances listées dans le fichier package.json :
+Installer les dépendances : 
+
+Une fois que vous êtes dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances listées dans le fichier package.json :
 ```
 npm install
 ```
