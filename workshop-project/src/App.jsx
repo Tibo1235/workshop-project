@@ -2,7 +2,9 @@ import { Button } from "./components/ui/button";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import AuthPage from "./pages/auth";
 import Signup from "./pages/signup";
-import AccompanyPage from "../src/pages/form/accompanyPage";
+import AccompanyPage from "./pages/accompanyPage";
+import DailyForm from "./pages/dailyFormPage";
+import ListPatient from "./pages/listPatient";
 
 function App() {
   const navigate = useNavigate();
@@ -11,9 +13,11 @@ function App() {
     <div>
       {/* Routes */}
       <Routes>
-        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/" element={<AuthPage />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/form" element={<AccompanyPage />} />
+        <Route path="/accompanyPage" element={<AccompanyPage />} />
+        <Route path="/dailyFormPage" element={<DailyForm />} />
+        <Route path="/listPatient" element={<ListPatient />} />
       </Routes>
     </div>
   );

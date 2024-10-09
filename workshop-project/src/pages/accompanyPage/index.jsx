@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+  import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import logo from '../../assets/images/logo.png'; // Import du logo
-//import profileIcon from '../assets/images/profile_icon.png'; // Import de l'icône de profil
 
 function AccompanyPage() {
   const [evaluation, setEvaluation] = useState("");
@@ -27,18 +26,18 @@ function AccompanyPage() {
         </Link>
 
         <div className="flex items-center">
-          <span className="mr-2 font-semibold text-black">AGNES DUPONT</span>
-          <img
+          <span className="mr-2 font-semibold text-black">Utilisateur</span>
+          {/*<img
             src={profileIcon}
             alt="Profile Icon"
             className="w-10 h-10 rounded-full"
-          />
+  />*/}
         </div>
       </header>
 
       {/* Contenu du formulaire */}
       <div className="flex flex-1 items-center justify-center">
-        <div className="w-full max-w-md px-8 py-6 bg-white rounded-lg shadow-md">
+        <div className="w-full max-w-md px-10 py-7 bg-white rounded-lg shadow-md">
           <h1 className="text-2xl font-bold text-center text-blue-500 mb-6">
             FORMULAIRE ACCOMPAGNATEUR
           </h1>
@@ -87,25 +86,26 @@ function AccompanyPage() {
             </div>
 
             {/* Troisième question */}
-            <div className="mb-6">
-              <p className="font-semibold mb-2">
-                Avez-vous pris du temps pour vous aujourd'hui afin de vous détendre ou vous ressourcer ?
-              </p>
-              <div className="flex justify-between">
-                {["Oui", "Non"].map((label, index) => (
-                  <label key={index} className="flex flex-col items-center">
-                    <input
-                      type="radio"
-                      name="relaxation"
-                      value={label}
-                      onChange={(e) => setRelaxation(e.target.value)}
-                      className="mb-1"
-                    />
-                    <span>{label}</span>
-                  </label>
-                ))}
+              <div className="mb-6">
+                <p className="font-semibold mb-2">
+                  Avez-vous pris du temps pour vous aujourd'hui afin de vous détendre ou vous ressourcer ?
+                </p>
+                <div className="flex justify-center space-x-10">
+                  {["Oui", "Non"].map((label, index) => (
+                    <label key={index} className="flex flex-col items-center">
+                      <input
+                        type="radio"
+                        name="relaxation"
+                        value={label}
+                        onChange={(e) => setRelaxation(e.target.value)}
+                        className="mb-1"
+                      />
+                      <span>{label}</span>
+                    </label>
+                  ))}
+                </div>
               </div>
-            </div>
+
 
             {/* Bouton de soumission */}
             <div className="text-center">
