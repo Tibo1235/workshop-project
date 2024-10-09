@@ -13,8 +13,6 @@
   - [6. Ajout de Composants ShadCN](#6-ajout-de-composants-shadcn)
   - [7. Installation d'Axios et React Router DOM](#7-installation-daxios-et-react-router-dom)
 - [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
 
 ## Présentation
 
@@ -40,3 +38,26 @@ Initialisez un nouveau projet Vite en utilisant le template de votre choix.
 
 ```bash
 npm create vite@latest my-project -- --template
+```
+## Utilisation
+
+Naviguer vers le répertoire du projet : Si ce n'est pas déjà fait, allez dans le répertoire où vous avez cloné le projet. Par exemple :
+
+```
+
+cd nom-du-repertoire
+```
+
+Installer les dépendances : Une fois que vous êtes dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances listées dans le fichier package.json :
+
+```
+
+npm install
+```
+
+Démarrer le serveur de développement : Après l'installation des dépendances, vous pouvez démarrer le serveur de développement avec :
+
+```
+
+npm run dev
+```
