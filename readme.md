@@ -39,6 +39,40 @@ Initialisez un nouveau projet Vite en utilisant le template de votre choix.
 ```bash
 npm create vite@latest my-project -- --template
 ```
+### 2. Configuration Git
+Initialisez un dépôt Git et créez un fichier .gitignore pour exclure les fichiers et dossiers inutiles.
+```bash
+git init
+echo "node_modules/" >> .gitignore
+echo "dist/" >> .gitignore
+echo ".env" >> .gitignore
+```
+### 3. Initialisation de Tailwind CSS
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+### 4. Ajout de Nodemon
+```bash
+npm install -D nodemon
+```
+### 5. Installation des Dépendances de Tailwind CSS
+```bash
+npm install tailwindcss postcss autoprefixer
+```
+### 6. Ajout de Composants ShadCN
+```bash
+npm install shadcn-ui
+```
+Et ajout dans react avec :
+```js
+import { Button } from 'shadcn-ui';
+```
+### 7. Installation d'Axios et React Router DOM
+```bash
+npm install axios react-router-dom
+```
+
 ## Utilisation
 
 Naviguer vers le répertoire du projet : Si ce n'est pas déjà fait, allez dans le répertoire où vous avez cloné le projet. Par exemple :
